@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:untitled2/widgets/drawer.dart';
+import 'package:untitled2/widgets/row_texts.dart';
 
 import '../model/data.dart';
 import '../widgets/users.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  int selectedIndex = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,14 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
               fit: BoxFit.cover,
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              TextButton(onPressed: () {}, child: Text('Feauture')),
-              Spacer(),
-              TextButton(onPressed: () {}, child: Text('More')),
-            ],
-          ),
+          RowText('Feature', 'More'),
           Container(
             height: 100,
             child: ListView.builder(
@@ -58,14 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
               itemCount: WORKER_DATA.length,
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              TextButton(onPressed: () {}, child: Text('Feauture')),
-              Spacer(),
-              TextButton(onPressed: () {}, child: Text('More')),
-            ],
-          ),
+          RowText('Best', 'More'),
           Container(
             height: 100,
             child: ListView.builder(
@@ -77,14 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
               itemCount: WORKER_DATA.length,
             ),
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              TextButton(onPressed: () {}, child: Text('Feauture')),
-              Spacer(),
-              TextButton(onPressed: () {}, child: Text('More')),
-            ],
-          ),
+          RowText('New', 'More'),
           Container(
             height: 100,
             child: ListView.builder(

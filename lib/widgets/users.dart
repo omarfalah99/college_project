@@ -15,9 +15,9 @@ class Users extends StatelessWidget {
       onTap: () {
         Navigator.of(context).pushNamed(UserDetails.routeName, arguments: id);
       },
-      borderRadius: BorderRadius.circular(10),
+      borderRadius: BorderRadius.circular(20),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(20),
         child: Container(
           width: 130,
           child: Column(
