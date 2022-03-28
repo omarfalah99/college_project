@@ -29,6 +29,8 @@ environment:
 dependencies:
   material_design_icons_flutter: ^5.0.6595
   font_awesome_flutter: ^10.1.0
+  flutter_slider_drawer: ^2.1.1
+  custom_bottom_navigation_bar: ^0.0.1
   flutter:
     sdk: flutter
 

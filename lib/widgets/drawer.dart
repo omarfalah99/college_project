@@ -1,3 +1,5 @@
+import 'package:custom_bottom_navigation_bar/custom_bottom_navigation_bar.dart';
+import 'package:custom_bottom_navigation_bar/custom_bottom_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
@@ -38,9 +40,10 @@ class _MainDrawerState extends State<MainDrawer> {
           title: Text(
             string,
             style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.blue[900],
-                fontSize: 18 * t),
+              fontWeight: FontWeight.bold,
+              color: Colors.blue[900],
+              fontSize: 16,
+            ),
           ),
         ),
       );
@@ -61,18 +64,18 @@ class _MainDrawerState extends State<MainDrawer> {
                 ),
                 const Text(
                   "ناو: ھێمن کامەران ھیوا",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
                 const Text(
                   "ژمارەی مۆبایل: ٠٧٥٠٤٤٥٤٥٤٥",
-                  style: TextStyle(color: Colors.white),
+                  style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
                       "عراق/هەولێر",
-                      style: TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                     SizedBox(
                       width: w / 80,
@@ -110,19 +113,19 @@ class _MainDrawerState extends State<MainDrawer> {
               thickness: 1,
             ),
             SizedBox(
-              height: h / 3.3,
+              height: h / 3.5,
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 iconBuilder(MdiIcons.facebook),
-                SizedBox(
-                  width: w / 15,
-                ),
+                // SizedBox(
+                //   width: w / 15,
+                // ),
                 iconBuilder(MdiIcons.instagram),
-                SizedBox(
-                  width: w / 15,
-                ),
+                // SizedBox(
+                //   width: w / 15,
+                // ),
                 iconBuilder(MdiIcons.snapchat),
               ],
             )
